@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="INFORMACIÓN"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:paddingBottom="16dp" />
+
+            <EditText
+                android:id="@+id/etNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre" />
+
+            <EditText
+                android:id="@+id/etApellidos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Apellidos" />
+
+            <EditText
+                android:id="@+id/etDNI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="DNI"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/etCelular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Celular"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+
+            <!-- Sección de cualidades -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seleccione sus cualidades:"
+                android:textStyle="bold"
+                android:paddingTop="16dp" />
+
+            <CheckBox
+                android:id="@+id/cbPuntual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Puntual" />
+
+            <CheckBox
+                android:id="@+id/cbRespetuoso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Respetuoso" />
+
+            <CheckBox
+                android:id="@+id/cbResponsable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Responsable" />
+
+            <CheckBox
+                android:id="@+id/cbOtro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Otro" />
+
+            <EditText
+                android:id="@+id/etOtraCualidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ingrese otra cualidad"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seleccione la carrera a estudiar:"
+                android:textStyle="bold"
+                android:paddingTop="16dp" />
+
+            <RadioGroup
+                android:id="@+id/rgCarrera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rbIngenieria"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ingeniería" />
+
+                <RadioButton
+                    android:id="@+id/rbCienciasMedicas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ciencias médicas" />
+
+                <RadioButton
+                    android:id="@+id/rbAdministracion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Administración" />
+
+                <RadioButton
+                    android:id="@+id/rbOtro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Otro" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnAcceder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Acceder"
+                android:layout_gravity="center"
+                android:paddingTop="16dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

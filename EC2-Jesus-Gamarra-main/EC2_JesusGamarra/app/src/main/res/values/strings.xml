@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">EC2_SM72896374</string>
+    <string name="registro">REGISTRO</string>
+    <string name="listado">LISTADO</string>
+    <string name="logo_de_la_aplicaci_n">Logo de la aplicación</string>
+    <string name="detalles_del_cuestionario_completado">Detalles del cuestionario completado</string>
+</resources>
